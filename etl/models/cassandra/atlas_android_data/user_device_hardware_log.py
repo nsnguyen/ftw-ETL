@@ -1,0 +1,41 @@
+from sqlalchemy import Column, BIGINT, TEXT, TIMESTAMP, INT, ARRAY, DECIMAL, BOOLEAN, FLOAT
+from sqlalchemy.ext.declarative import declarative_base
+
+Base = declarative_base()
+
+
+class UserDeviceHardwareLog(Base):
+  __tablename__ = 'user_device_hardware_log'
+  user_id = Column(BIGINT, primary_key=True)
+  trigger_type = Column(TEXT, primary_key=True)
+  trigger_id = Column(BIGINT, primary_key=True)
+  android_id = Column(TEXT)
+  android_serial_number = Column(TEXT)
+  android_version = Column(TEXT)
+  battery_capacity = Column(INT)
+  bluetooth_address = Column(TEXT)
+  country_iso = Column(TEXT)
+  cpu_core = Column(INT)
+  data_uploaded_at = Column(TIMESTAMP)
+  device_id = Column(TEXT)
+  device_id_slot_1 = Column(TEXT)
+  device_id_slot_2 = Column(TEXT)
+  device_id_type = Column(TEXT)
+  device_model = Column(TEXT)
+  device_storage = Column(INT)
+  dual_sim = Column(BOOLEAN)
+  google_ad_id = Column(TEXT)
+  is_rooted = Column(BOOLEAN)
+  max_cpu_frequency = Column(INT)
+  number_of_camera = Column(INT)
+  phone_number = Column(TEXT)
+  screen_resolution = Column(TEXT)
+  screen_size = Column(FLOAT)
+  sd_card_storage = Column(INT)
+  sensor_list = Column(ARRAY)
+  subscriber_id = Column(TEXT)
+  tala_version_code = Column(TEXT)
+  tala_version_name = Column(TEXT)
+  wlan_mac = Column(TEXT)
+  deleted_flag = Column(BOOLEAN)
+  uploaded_timestamp = Column(TIMESTAMP)

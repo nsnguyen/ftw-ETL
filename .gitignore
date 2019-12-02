@@ -1,0 +1,32 @@
+# exclude hidden config files
+.DS_Store
+
+#exclude the log directory
+log
+
+# exclude env folder
+env
+venv
+
+# exclude pytest caches
+.cache
+.eggs
+*.egg-info
+*.egg
+
+# exclude any testing virtual environments
+*.test_virtual_env
+
+# exclude pycharm
+.idea
+
+# exclude the heartbeat file
+heartbeat
+
+# exclude generated newrelic config
+newrelic.ini
+
+# pyenv
+.python-version
+
+__pycache__

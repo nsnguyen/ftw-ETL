@@ -1,0 +1,22 @@
+%YAML 1.1
+---
+worker:
+  cassandra_replication
+version:
+  1.0.0
+source:
+  'test'
+status:
+  enabled
+parameters:
+  KAFKA_BROKERS: kafka
+  KAFKA_INPUT_TOPIC: atlas_android_data
+  KAFKA_GROUP_ID: "atlas-android-data-processor"
+  KAFKA_LOADER_TOPIC: data_warehouse
+  SNOWFLAKE_ACCOUNT: "ng95977"
+  SNOWFLAKE_USER: "NNGUYEN"
+  SNOWFLAKE_PASSWORD: "Operations!1"
+  SNOWFLAKE_DATABASE: "ENGINEERING_DB"
+  SNOWFLAKE_SCHEMA: "ATLAS_DEV"
+  SNOWFLAKE_WAREHOUSE: "ENGINEERING_WH"
+  SNOWFLAKE_ROLE: "ENGINEERING_ROLE"
