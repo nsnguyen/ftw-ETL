@@ -1,0 +1,28 @@
+{
+  "python.defaultInterpreterPath": "~/Library/Caches/pypoetry/virtualenvs/sidecar-ds-apps-KonJndM8-py3.9/bin/python",
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+  "python.linting.lintOnSave": true,
+  "editor.formatOnSave": true,
+  "python.linting.flake8Args": [
+    "--ignore=W293",
+    "--max-line-length=150"
+  ],
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": [
+    "--line-length=150"
+  ],
+  "python.sortImports.args": [
+    "--profile=black"
+  ],
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "autoDocstring.docstringFormat": "sphinx",
+  "sql-formatter.uppercase": true,
+  "python.analysis.extraPaths": [
+    "./ds-utils"
+  ],
+}
