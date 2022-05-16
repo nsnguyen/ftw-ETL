@@ -5,4 +5,4 @@ confluent-kafka==1.2.0
 pytest
 mock==2.0.0
 argh==0.26.2
-PyYAML==5.1.2
+PyYAML==5.4
